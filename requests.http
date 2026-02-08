@@ -1,0 +1,27 @@
+### Получить всех студентов
+GET http://localhost:8080/api/students
+
+### Получить студента по id
+GET http://localhost:8080/api/students/3
+
+### создать студента
+POST http://localhost:8080/api/students
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Didar",
+  "age": 19,
+  "gpa": 3.4
+}
+
+### Обновить GPA
+PATCH http://localhost:8080/api/students/3/gpa
+Content-Type: application/json
+
+{
+  "gpa": 3.3
+}
+
+### Удалить студента
+DELETE http://localhost:8080/api/students/3
